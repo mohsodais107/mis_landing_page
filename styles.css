@@ -9,6 +9,60 @@ body {
   background-color: #f2f4f7;
   direction: rtl;
 }
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Black.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-ExtraLight.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: estedad;
+  src: url(fonts/Estedad-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
 .bg {
   width: 100%;
   height: 900px;
