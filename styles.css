@@ -784,7 +784,9 @@ img.mockup-lable {
 }
 .footer-install-store,
 .footer-install-play {
-  background-color: transparent;
+  mix-blend-mode: screen;
+  width: 165px;
+  height: 54px;
 }
 /* middle section */
 .footer-middle {
@@ -810,8 +812,8 @@ img.mockup-lable {
   color: #ffffff;
 }
 .footer-mis img {
-  width: 70px;
-  height: 72px;
+  width: 72px;
+  height: 70px;
   margin-top: 8px;
   margin-bottom: 16px;
 }
