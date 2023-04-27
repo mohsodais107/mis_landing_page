@@ -784,7 +784,7 @@ img.mockup-lable {
 }
 .footer-install-store,
 .footer-install-play {
-  background-color: transparent;
+  mix-blend-mode: screen;
 }
 /* middle section */
 .footer-middle {
