@@ -390,6 +390,33 @@ img.mockup-lable {
   margin: auto;
   border-radius: 24px 24px 0px 0px;
 }
+
+.main-sections-container-2 {
+  background-color: #f9f5ff;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 67px;
+  padding: 26px 70px;
+  width: 85%;
+  margin: auto;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.main-sections-container-3 {
+  background-color: #f9f5ff;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 67px;
+  padding: 26px 70px;
+  width: 85%;
+  margin: auto;
+  border-radius: 24px 24px 0px 0px;
+}
+
 .main-sections-intro {
   display: flex;
   flex-direction: column;
