@@ -582,9 +582,9 @@ img.mockup-lable {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  width: 78%;
+  width: 72%;
   margin: auto;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   padding: 80px 70px;
   background: linear-gradient(292.12deg, #5c339e -116.46%, #ffffff 122.69%);
 }
