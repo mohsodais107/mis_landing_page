@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: #668ac0; */
   background-color: #f2f4f7;
   direction: rtl;
 }
@@ -82,13 +81,16 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
 ul {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   align-items: baseline;
   width: 400px;
 }
