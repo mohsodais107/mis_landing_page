@@ -346,16 +346,23 @@ img.mockup-lable {
   text-align: center;
   gap: 8px;
 }
+
+.button-bg {
+  background-color: #9a54ea !important;
+  color: #ebddfb !important;
+  font-weight: bold !important;
+}
+
 .main-sections-li1 {
-  background-color: #9a54ea;
-  color: #ebddfb;
+  background-color: #ebddfb;
+  color: #9a54ea;
   padding: 16px 40px;
   border-radius: 0px 10px 0px 0px;
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main-sections-li2 {
   background-color: #ebddfb;
@@ -366,6 +373,8 @@ img.mockup-lable {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main-sections-li3 {
   background-color: #ebddfb;
@@ -377,6 +386,8 @@ img.mockup-lable {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main-sections-container {
   background-color: #f9f5ff;
