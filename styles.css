@@ -84,6 +84,10 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 16px;
+}
+.rasaa-logo {
+  width: 50px;
 }
 ul {
   margin: 0;
@@ -118,6 +122,9 @@ ul {
 }
 
 /* CTA */
+.header-logo {
+  display: none;
+}
 .main-header {
   display: flex;
   flex-direction: column;
@@ -130,7 +137,6 @@ ul {
   color: white;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 8px;
   width: 657px;
@@ -176,7 +182,6 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   gap: 12px;
-  /* z-index: 1; */
 }
 .cta-main {
   display: flex;
@@ -233,6 +238,9 @@ img.mockup-lable {
   margin-top: 60px;
   width: 90%;
 }
+.tablet-mockup {
+  display: none;
+}
 
 /* followers */
 .followers {
@@ -259,7 +267,7 @@ img.mockup-lable {
   width: 1028px;
 }
 
-/* MIS intro */
+/* Rasaa intro */
 .mis-intro {
   margin: auto;
   width: 50%;
@@ -319,9 +327,6 @@ img.mockup-lable {
   margin-left: 102px;
   margin-bottom: 51px;
   margin-right: 102px;
-  /* position: absolute;
-  top: 1764px;
-  left: 308px; */
 }
 
 /* main-actions */
@@ -331,6 +336,7 @@ img.mockup-lable {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
   margin-top: 120px;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -341,7 +347,6 @@ img.mockup-lable {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-bottom: 140px;
 }
 .main-sections-title {
   font-style: normal;
@@ -365,7 +370,7 @@ img.mockup-lable {
 .button-bg {
   background-color: #9a54ea !important;
   color: #ebddfb !important;
-  font-weight: bold !important;
+  font-weight: 700 !important;
 }
 
 .main-sections-li1 {
@@ -404,40 +409,16 @@ img.mockup-lable {
   border: none;
   cursor: pointer;
 }
-.main-sections-container {
+.main-sections-container,
+.main-sections-container-2,
+.main-sections-container-3 {
   background-color: #f9f5ff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 67px;
-  padding: 26px 70px;
-  width: 85%;
-  margin: auto;
-  border-radius: 24px 24px 0px 0px;
-}
-
-.main-sections-container-2 {
-  background-color: #f9f5ff;
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 67px;
-  padding: 26px 70px;
-  width: 85%;
-  margin: auto;
-  border-radius: 24px 24px 0px 0px;
-}
-
-.main-sections-container-3 {
-  background-color: #f9f5ff;
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 67px;
-  padding: 26px 70px;
+  padding: 40px 70px;
   width: 85%;
   margin: auto;
   border-radius: 24px 24px 0px 0px;
@@ -502,7 +483,7 @@ img.mockup-lable {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 77%;
   gap: 40px;
 }
 .plugins-header {
@@ -522,8 +503,9 @@ img.mockup-lable {
 }
 .plugins-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 12px;
   padding: 12px 32px;
   border-radius: 40px;
   border: none;
@@ -539,6 +521,12 @@ img.mockup-lable {
 .plugins-button:hover {
   background-color: #d820b3;
   transition: 0.3s;
+}
+.slide-r,
+.slide-l,
+.shadow-r,
+.shadow-l {
+  display: none;
 }
 .plugins-cards {
   display: flex;
@@ -876,7 +864,7 @@ img.mockup-lable {
   color: #ffffff;
 }
 .footer-mis img {
-  width: 72px;
+  width: 122px;
   height: 70px;
   margin-top: 8px;
   margin-bottom: 16px;
@@ -991,4 +979,211 @@ img.mockup-lable {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1280px) {
+
+  .bg {
+    height: 1400px;
+  }
+  header {
+    display: none;
+  }
+  /* Logo */
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 251px;
+    height: 156px;
+    margin: 150px auto;
+  }
+
+  /* CTA */
+  .title {
+    width: 900px;
+  }
+  .title1 {
+    font-size: 20px;
+  }
+  .title2 {
+    font-size: 96px;
+    margin-top: 8px;
+  }
+  .title3 {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  .introduction-link {
+    font-size: 24px;
+  }
+  .cta {
+    margin-top: 24px;
+  }
+  .cta-main {
+    width: 233px;
+  }
+
+  /* Mockup */
+  .tablet-mockup {
+    display: flex;
+    margin-top: 200px;
+    width: 77%;
+  }
+  .mockup-lable {
+    display: none;
+  }
+
+  /* followers */
+  .followers {
+    margin-top: 130px;
+    margin-bottom: 140px;
+  }
+  .followers-lable {
+    width: 234px;
+    height: 120px;
+  }
+  .followers p {
+    font-size: 28px;
+  }
+  .followers-list {
+    width: 77%;
+    
+  }
+
+  /* Rasaa Intro */
+  .mis-intro {
+    gap: 150px;
+    width: 77%;
+  }
+  .mis-intro-text1
+  .mis-intro-text2 {
+    font-size: 16px;
+  }
+  .mis-intro-title {
+    font-size: 32px;
+  }
+  .mis-intro-list {
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .mis-intro-list img {
+    width: 143.24px;
+    height: 41.38px;
+  }
+  .mis-intro-lable-bg {
+    width: 463.01px;
+    height: 558px;
+  }
+  .mis-intro-lable2 {
+    width: 296.13px;
+    height: 468.79px;
+  }
+
+  /* main actions */
+  .main-sections-title {
+    font-size: 30px;
+  }
+  .main-sections-li1
+  .main-sections-li2
+  .main-sections-li3 {
+    font-size: 15px;
+  }
+  .main-sections-container,
+  .main-sections-container-2,
+  .main-sections-container-3 {
+    padding: 24px 70px 32px;
+    gap: 10px;
+    width: 85%;
+    gap: 64px;
+  }
+  .main-sections-intro-text1 {
+    font-size: 14px;
+  }
+  .main-sections-intro-title {
+    font-size: 32px;
+  }
+  .main-sections-intro-text2 {
+    font-size: 14px;
+  }
+  .main-sections-intro-button {
+    width: 235px;
+    height: 59px;
+  }
+  .main-sections-container img,
+  .main-sections-container-2 img,
+  .main-sections-container-3 img {
+    width: 531px;
+    height: 447px;
+  }
+
+  /* plugins */
+  .plugins-button{
+    width: 326px;
+  }
+  .plugins-cards {
+    overflow-x: scroll;
+  }
+
+  /* Testimonial */
+  .testimonial {
+    padding: 70px 100px;
+    width: 77%;
+  }
+  .testimonial q {
+    font-size: 28px;
+  }
+  .testimonial img {
+    width: 110px;
+    height: 110px;
+    border-radius: 36px;
+  }
+  .testimonial span {
+    font-size: 18px;
+  }
+  .testimonial address {
+    font-size: 14px;
+  }
+
+  /* demo */
+  .demo {
+    width: 77%;
+  }
+  .demo-text1 {
+    font-size: 16px;
+  }
+  .demo-title {
+    font-size: 32px;
+  }
+  .demo-text2 {
+    font-size: 16px;
+  }
+  .demo-button {
+    width: 233px;
+  }
+  .demo-lable {
+    width: 464px;
+    height: 327px;
+  }
+
+  /* team intro */
+  .team-intro {
+    width: 77%;
+  }
+  .team-intro-lable {
+    width: 40%;
+  }
+  .team-intro-text1 {
+    font-size: 16px;
+  }
+  .team-intro-title {
+    font-size: 32px;
+  }
+  .team-intro-text2 {
+    font-size: 32px;
+  }
 }
