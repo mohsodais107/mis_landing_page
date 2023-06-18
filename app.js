@@ -1,4 +1,6 @@
 
+// toggle menus
+
 const firstBtn = document.getElementById('button-1')
 const secondBtn = document.getElementById('button-2')
 const thirdBtn = document.getElementById('button-3')
@@ -7,6 +9,22 @@ const firstDiv = document.getElementById('div-1')
 const secondDiv = document.getElementById('div-2')
 const thirdDiv = document.getElementById('div-3')
 
+
+// footer responsive
+const company = document.getElementById('company');
+const links_1 = document.getElementById('links1');
+
+const features = document.getElementById('features');
+const links_2 = document.getElementById('links2');
+
+const plugins = document.getElementById('plugins') 
+const links_3 = document.getElementById('links3')
+
+
+
+
+
+// Toggle menue codes
 
 function firstToggleDiv () {
     firstBtn.classList.add("button-bg")
@@ -50,8 +68,19 @@ thirdBtn.addEventListener("click", thirdToggleDiv)
 
 
 
+// footer responsive codes
 
+company.addEventListener('click', ()=>{
+    links_1.classList.toggle('activate')
+})
 
+features.addEventListener('click', ()=>{
+    links_2.classList.toggle('activate')
+})
+
+plugins.addEventListener('click', ()=>{
+    links_3.classList.toggle('activate')
+})
 
 
 
