@@ -10,55 +10,55 @@ body {
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Black.ttf);
+  src: url(Fonts/Estedad-Black.ttf);
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-ExtraBold.ttf);
+  src: url(Fonts/Estedad-ExtraBold.ttf);
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Bold.ttf);
+  src: url(Fonts/Estedad-Bold.ttf);
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-SemiBold.ttf);
+  src: url(Fonts/Estedad-SemiBold.ttf);
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Medium.ttf);
+  src: url(Fonts/Estedad-Medium.ttf);
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Regular.ttf);
+  src: url(Fonts/Estedad-Regular.ttf);
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Light.ttf);
+  src: url(Fonts/Estedad-Light.ttf);
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-ExtraLight.ttf);
+  src: url(Fonts/Estedad-ExtraLight.ttf);
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/Estedad-Thin.ttf);
+  src: url(Fonts/Estedad-Thin.ttf);
   font-style: normal;
   font-weight: 100;
 }
@@ -1020,7 +1020,25 @@ img.mockup-lable {
   display: none;
 }
 
+#main-section-2{
+  display: none;
+}
+
 /* ----------- Responsive ----------- */
+@media (max-width: 600px) {
+  #main-section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 8px;
+  }
+  .main-sections-menuebar {
+    display: none;
+  }
+}
 
 /* Huge Desktop */
 @media (max-width: 4000px) {

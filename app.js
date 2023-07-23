@@ -1,3 +1,4 @@
+// toggle menus
 
 // toggle menus
 
@@ -82,55 +83,57 @@ plugins.addEventListener('click', ()=>{
     links_3.classList.toggle('activate')
 })
 
+// tab button toggle
+const firstBtnh = document.getElementById('buttons-1')
+const secondBtnh = document.getElementById('buttons-2')
+const thirdBtnh = document.getElementById('buttons-3')
 
+firstBtnh.addEventListener('click', ()=>{
+    firstBtnh.classList.add('button-bg')
+    firstBtnh.style.color = '#ebddfb';
+    firstBtnh.style.fontWeight = 'bold';
+    firstBtnh.classList.remove('button-bg')
+    thirdBtnh.classList.remove('button-bg')
 
+    firstBtnh.innerText = 'داشبورد میریت';
+    secondBtnh.innerText = '2'  
+    thirdBtnh.innerText = '3' 
 
+    firstBtnh.style.backgroundColor = '#9a54ea'
+    secondBtnh.style.backgroundColor = '#ebddfb'
+    thirdBtnh.style.backgroundColor = '#ebddfb'
+})
 
+secondBtnh.addEventListener('click', ()=>{
+    firstBtnh.style.color = '#9a54ea';
 
+    firstBtnh.classList.remove('button-bg')
+    secondBtnh.classList.add('button-bg')
+    thirdBtnh.classList.remove('button-bg')
 
+    firstBtnh.innerText = '1';
+    secondBtnh.innerText = 'گزارش های سریع'  
+    thirdBtnh.innerText = '3'
 
+    firstBtnh.style.backgroundColor = '#ebddfb'
+    secondBtnh.style.backgroundColor = '#9a54ea'
+    thirdBtnh.style.backgroundColor = '#ebddfb'
+})
+thirdBtnh.addEventListener('click', ()=>{
+    firstBtnh.style.color = '#9a54ea';
+    
+    firstBtnh.classList.remove('button-bg')
+    secondBtnh.classList.remove('button-bg')
+    thirdBtnh.classList.add('button-bg')
 
-
-// // tab button toggle
-
-// const firstBtn = document.getElementById('button-1')
-// const secondBtn = document.getElementById('button-2')
-// const thirdBtn = document.getElementById('button-3')
-
-// const firstDiv = document.getElementById('div-1')
-// const secondDiv = document.getElementById('div-2')
-// const thirdDiv = document.getElementById('div-3')
-
-// var divOneActvie = false;
-// var divTwoActive = false;
-// var divThreeActive = true;
-
-// if (divOneActvie == true) {
-//     firstBtn.innerText = 'داشبورد میریت';
-//     firstBtn.classList.add("button-bg")
-// }else {
-//     firstBtn.style.backgroundColor = 'red';
-//     firstBtn.innerText = '1'
-// };
-
-
-
-// if (divTwoActive == true) {
-//     secondBtn.innerText = 'گزارش های سریع';
-//     secondBtn.classList.add("button-bg")
-// }else {
-//     secondBtn.style.backgroundColor = 'red';
-//     secondBtn.innerText = '2'
-// };
-
-
-// if (divThreeActive == true) {
-//     thirdBtn.innerText = 'افزونه ها';
-//     thirdBtn.classList.add("button-bg")
-// }else {
-//     thirdBtn.style.backgroundColor = 'red';
-//     thirdBtn.innerText = '3'
-// };
+    firstBtnh.innerText = '1';
+    secondBtnh.innerText = '2'  
+    thirdBtnh.innerText = 'افزونه ها'
+    
+    firstBtnh.style.backgroundColor = '#ebddfb'
+    secondBtnh.style.backgroundColor = '#ebddfb'
+    thirdBtnh.style.backgroundColor = '#9a54ea'
+})
 
 
 // firstBtn.addEventListener("click", firstToggleDiv)
