@@ -10,55 +10,55 @@ body {
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Black.ttf);
+  src: url('fonts/estedad-Black.ttf');
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-ExtraBold.ttf);
+  src: url('fonts/estedad-ExtraBold.ttf');
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Bold.ttf);
+  src: url('fonts/estedad-Bold.ttf');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-SemiBold.ttf);
+  src: url('fonts/estedad-SemiBold.ttf');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Medium.ttf);
+  src: url('fonts/estedad-Medium.ttf');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Regular.ttf);
+  src: url('fonts/estedad-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Light.ttf);
+  src: url('fonts/estedad-Light.ttf');
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-ExtraLight.ttf);
+  src: url('fonts/estedad-ExtraLight.ttf');
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: estedad;
-  src: url(fonts/estedad-Thin.ttf);
+  src: url('fonts/estedad-Thin.ttf');
   font-style: normal;
   font-weight: 100;
 }
