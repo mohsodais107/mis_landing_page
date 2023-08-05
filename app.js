@@ -1,4 +1,3 @@
-// toggle menus
 
 // toggle menus
 
@@ -83,6 +82,9 @@ plugins.addEventListener('click', ()=>{
     links_3.classList.toggle('activate')
 })
 
+
+
+
 // tab button toggle
 const firstBtnh = document.getElementById('buttons-1')
 const secondBtnh = document.getElementById('buttons-2')
@@ -134,6 +136,26 @@ thirdBtnh.addEventListener('click', ()=>{
     secondBtnh.style.backgroundColor = '#ebddfb'
     thirdBtnh.style.backgroundColor = '#9a54ea'
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // firstBtn.addEventListener("click", firstToggleDiv)
