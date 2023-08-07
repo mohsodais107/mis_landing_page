@@ -12,55 +12,55 @@ body {
 @font-face {
 font-family: estedad;
 /* src: url(/fonts/estedad-black.ttf); */
-src: url(../../fonts/estedad-black.ttf);
+src: url('../../fonts/estedad-black.ttf');
 font-style: normal;
 font-weight: 900;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-extrabold.ttf);
+src: url('../../fonts/estedad-extrabold.ttf');
 font-style: normal;
 font-weight: 800;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-bold.ttf);
+src: url('../../fonts/estedad-bold.ttf');
 font-style: normal;
 font-weight: 700;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-semiBold.ttf);
+src: url('../../fonts/estedad-semiBold.ttf');
 font-style: normal;
 font-weight: 600;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-medium.ttf);
+src: url('../../fonts/estedad-medium.ttf');
 font-style: normal;
 font-weight: 500;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-regular.ttf);
+src: url('../../fonts/estedad-regular.ttf');
 font-style: normal;
 font-weight: 400;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-light.ttf);
+src: url('../../fonts/estedad-light.ttf');
 font-style: normal;
 font-weight: 300;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-extralight.ttf);
+src: url('../../fonts/estedad-extralight.ttf');
 font-style: normal;
 font-weight: 200;
 }
 @font-face {
 font-family: estedad;
-src: url(../../fonts/estedad-thin.ttf);
+src: url('../../fonts/estedad-thin.ttf');
 font-style: normal;
 font-weight: 100;
 }
@@ -1131,6 +1131,7 @@ a.social {
 }
 
 @media (max-width: 530px) {
+    /* The new Slider */
     .slider {
         grid-auto-columns: repeat(5, minmax(1fr 1fr));
     }
