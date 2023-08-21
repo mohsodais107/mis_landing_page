@@ -17,6 +17,42 @@ navbutton.addEventListener("click", () => {
 // });
 
 
+
+
+
+/////////////// Footer Responsive
+
+// Variables
+const company = document.getElementById('company');
+const links_1 = document.getElementById('links1');
+
+const features = document.getElementById('features');
+const links_2 = document.getElementById('links2');
+
+const plugins = document.getElementById('plugins') 
+const links_3 = document.getElementById('links3')
+
+// functions
+company.addEventListener('click', ()=>{
+    links_1.classList.toggle('activate')
+})
+
+features.addEventListener('click', ()=>{
+    links_2.classList.toggle('activate')
+})
+
+plugins.addEventListener('click', ()=>{
+    links_3.classList.toggle('activate')
+})
+
+
+
+
+
+
+
+
+////////////////// THAT SLIDER
 ////////// The new Slider
 
 // Variables
@@ -54,7 +90,7 @@ slider.classList.remove("noTransition");
 // Add event listeners for the arrow buttons to scroll the slider left and right
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        slider.scrollLeft += btn.id == "left" ? firstCardWidth : -firstCardWidth ;
+        slider.scrollLeft += btn.id == "left" ? (firstCardWidth + 16) : -(firstCardWidth + 16) ;
     });
 });
 
@@ -105,32 +141,3 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 // slider.addEventListener("scroll", infiniteScroll);
 // wrapper.addEventListener("mouseleave", autoPlay);
 
-
-
-
-
-
-/////////////// Footer Responsive
-
-// Variables
-const company = document.getElementById('company');
-const links_1 = document.getElementById('links1');
-
-const features = document.getElementById('features');
-const links_2 = document.getElementById('links2');
-
-const plugins = document.getElementById('plugins') 
-const links_3 = document.getElementById('links3')
-
-// functions
-company.addEventListener('click', ()=>{
-    links_1.classList.toggle('activate')
-})
-
-features.addEventListener('click', ()=>{
-    links_2.classList.toggle('activate')
-})
-
-plugins.addEventListener('click', ()=>{
-    links_3.classList.toggle('activate')
-})

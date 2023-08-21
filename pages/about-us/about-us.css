@@ -8,6 +8,7 @@ body {
     direction: rtl;
     background-color: #F2F4F7;
 }
+
 @font-face {
     font-family: estedad;
     src: url('../../fonts/estedad-black.ttf');
@@ -103,6 +104,115 @@ header h1 {
     text-align: center;
     font-size: 48px;
     font-weight: 600;
+}
+
+/* Team Slider */
+.wrapper {
+    width: 75%;
+    height: auto;
+    margin-top: 100px !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.btn1,
+.btn2 {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+.btn1:active,
+.btn2:active {
+    transform: translateY(-50%) scale(0.85);
+}
+.btn1 {
+    left: -40px;
+}
+.btn2 {
+    right: -40px;
+}
+.slider {
+    max-width: unset;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-radius: 24px;
+}
+.card {
+    padding: 24px 32px;
+    background-color: #FFF;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    user-select: none;
+}
+.card img {
+    min-width: 200px !important;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.card div h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 500;
+}
+.card div p {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Features cards Hover */
+.features-card {
+    width: 267px;
+    min-height: 305px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.features-card-default {
+    width: 267px;
+    min-height: 305px;
+}
+.features-card-hover {
+    display: none;
+    width: 267px;
+    min-height: 305px;
+    margin-top: -305px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2.5px);
+    border-radius: 12px;
+    padding: 48px 32px;
+    position: absolute;
+    transition: 0.3s ease !important;
+}
+.features-card:hover .features-card-hover {
+    display: block;
+    transition: 0.3s ease !important;
+    animation-name: card-hover;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}
+@keyframes card-hover {
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
 }
 
 /* footer */
@@ -369,8 +479,6 @@ a.social {
 }
 
 
-
-
 /************* Header Responsive ***************/
 @media (max-width: 900px) {
     .burger-menue {
@@ -474,7 +582,6 @@ a.social {
         font-size: 32px;
     }
 }
-
 
 
 /*********** Footer Responsive **************/

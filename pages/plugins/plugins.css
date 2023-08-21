@@ -8,6 +8,7 @@ body {
     direction: rtl;
     background-color: #F2F4F7;
 }
+
 @font-face {
     font-family: estedad;
     src: url('../../fonts/estedad-black.ttf');
@@ -104,6 +105,7 @@ header h1 {
     font-size: 48px;
     font-weight: 600;
 }
+
 
 /* footer */
 /* First Part */
@@ -369,8 +371,6 @@ a.social {
 }
 
 
-
-
 /************* Header Responsive ***************/
 @media (max-width: 900px) {
     .burger-menue {
@@ -474,7 +474,6 @@ a.social {
         font-size: 32px;
     }
 }
-
 
 
 /*********** Footer Responsive **************/
