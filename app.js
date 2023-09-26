@@ -38,8 +38,8 @@ function firstToggleDiv () {
 }
 
 function secondToggleDiv () {
-    firstBtn.classList.remove("button-bg")
     secondBtn.classList.add("button-bg")
+    firstBtn.classList.remove("button-bg")
     thirdBtn.classList.remove("button-bg")
 
     secondDiv.style.display = 'flex';
@@ -49,9 +49,9 @@ function secondToggleDiv () {
 }
 
 function thirdToggleDiv () {
+    thirdBtn.classList.add("button-bg")
     firstBtn.classList.remove("button-bg")
     secondBtn.classList.remove("button-bg")
-    thirdBtn.classList.add("button-bg")
 
     thirdDiv.style.display = 'flex';
     firstDiv.style.display = 'none';
@@ -91,53 +91,55 @@ const secondBtnh = document.getElementById('buttons-2')
 const thirdBtnh = document.getElementById('buttons-3')
 
 firstBtnh.addEventListener('click', ()=>{
-    firstBtnh.classList.add('button-bg')
-    firstBtnh.style.color = '#ebddfb';
-    firstBtnh.style.fontWeight = 'bold';
-    firstBtnh.classList.remove('button-bg')
-    thirdBtnh.classList.remove('button-bg')
 
+    firstBtnh.classList.add('button-bg')
+    secondBtnh.classList.remove('button-bg')
+    thirdBtnh.classList.remove('button-bg')
+    
     firstBtnh.innerText = 'داشبورد میریت';
     secondBtnh.innerText = '2'  
     thirdBtnh.innerText = '3' 
-
+    
+    firstBtnh.style.color = '#ebddfb';
     firstBtnh.style.backgroundColor = '#9a54ea'
     secondBtnh.style.backgroundColor = '#ebddfb'
     thirdBtnh.style.backgroundColor = '#ebddfb'
 })
 
 secondBtnh.addEventListener('click', ()=>{
-    firstBtnh.style.color = '#9a54ea';
-
+    
     firstBtnh.classList.remove('button-bg')
     secondBtnh.classList.add('button-bg')
     thirdBtnh.classList.remove('button-bg')
-
+    
     firstBtnh.innerText = '1';
     secondBtnh.innerText = 'گزارش های سریع'  
     thirdBtnh.innerText = '3'
-
+    
+    firstBtnh.style.color = '#9a54ea';
     firstBtnh.style.backgroundColor = '#ebddfb'
     secondBtnh.style.backgroundColor = '#9a54ea'
     thirdBtnh.style.backgroundColor = '#ebddfb'
 })
 thirdBtnh.addEventListener('click', ()=>{
-    firstBtnh.style.color = '#9a54ea';
     
     firstBtnh.classList.remove('button-bg')
     secondBtnh.classList.remove('button-bg')
     thirdBtnh.classList.add('button-bg')
-
+    
     firstBtnh.innerText = '1';
     secondBtnh.innerText = '2'  
     thirdBtnh.innerText = 'افزونه ها'
     
+    firstBtnh.style.color = '#9a54ea';
     firstBtnh.style.backgroundColor = '#ebddfb'
     secondBtnh.style.backgroundColor = '#ebddfb'
     thirdBtnh.style.backgroundColor = '#9a54ea'
 })
 
-
+firstBtnh.addEventListener("click", firstToggleDiv)
+secondBtnh.addEventListener("click", secondToggleDiv)
+thirdBtnh.addEventListener("click", thirdToggleDiv)
 
 
 

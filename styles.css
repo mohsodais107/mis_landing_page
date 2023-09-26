@@ -524,6 +524,9 @@ img.mockup-lable {
   justify-content: space-between;
   align-items: center;
 }
+.plugins-header a {
+  text-decoration: none;
+}
 .plugins-title {
   font-style: normal;
   font-weight: 700;
@@ -920,6 +923,9 @@ img.mockup-lable {
   gap: 4px;
   margin-top: 4px;
 }
+.footer-social a {
+  text-decoration: none;
+}
 .fb {
   margin-left: 8px;
 }
@@ -1105,6 +1111,13 @@ img.mockup-lable {
   }
   .mis-intro {
     width: 70%;
+    gap: 60px;
+  }
+  .mis-intro-text {
+    width: 400px;
+  }
+  .mis-intro-lable-bg {
+    width: 530px;
   }
   .main-sections-intro-title {
     font-size: 28px;
@@ -1225,7 +1238,7 @@ img.mockup-lable {
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    width: 210px;
+    width: 180px;
     height: auto;
     margin: 140px auto;
   }
